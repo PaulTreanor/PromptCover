@@ -17,6 +17,74 @@ function App (): ReactElement {
       .gizmo-shadow-stroke {
         display: none !important;
       }
+      .dark.bg-gray-950, .dark.bg-gray-950 div {
+        background-color: #eee !important; 
+      }
+      /* vs theme for hljs */
+      .hljs code {
+        color: black;
+      }
+      .hljs.language-javascript {
+        color: black !important;
+      }
+      .hljs {
+        background-color: #f4f4f4;
+        color: black;
+      }
+      
+      .hljs-subst {
+        color: black;
+      }
+      
+      .hljs-string,
+      .hljs-title,
+      .hljs-symbol,
+      .hljs-bullet,
+      .hljs-attribute,
+      .hljs-addition,
+      .hljs-variable,
+      .hljs-template-tag,
+      .hljs-template-variable {
+        color: #800; /* red changed from #050 green */
+      }
+      
+      .hljs-comment,
+      .hljs-quote {
+        color: #050; /* green changed from #777 grey */
+      }
+      
+      .hljs-number,
+      .hljs-regexp,
+      .hljs-literal,
+      .hljs-type,
+      .hljs-link {
+        color: #800; /* red */
+      }
+      
+      .hljs-deletion,
+      .hljs-meta {
+        color: #00e; /* blue */
+      }
+      
+      .hljs-keyword,
+      .hljs-selector-tag,
+      .hljs-doctag,
+      .hljs-title,
+      .hljs-section,
+      .hljs-built_in,
+      .hljs-tag,
+      .hljs-name {
+        font-weight: bold;
+        color: navy;
+      }
+      
+      .hljs-emphasis {
+        font-style: italic;
+      }
+      
+      .hljs-strong {
+        font-weight: bold;
+      }
     `
 
     const script = `
