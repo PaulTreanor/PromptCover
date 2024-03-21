@@ -35,8 +35,8 @@ function createWindow () {
       contextIsolation: true
       // enableWebView: true // from chatgpt
     },
-    width: 800,
-    height: 800
+    width: 475,
+    height: 750
   })
 
   // Test active push message to Renderer-process.
