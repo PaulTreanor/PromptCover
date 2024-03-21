@@ -14,6 +14,10 @@ function App (): ReactElement {
   useEffect(() => {
     const webview = webviewRef.current
     const css = `
+      /* Hide sample prompt elements */
+      .flex.flex-col.gap-2 {
+        display: none !important;
+      }
       .gizmo-shadow-stroke {
         display: none !important;
       }
@@ -25,6 +29,9 @@ function App (): ReactElement {
         color: black;
       }
       .hljs.language-javascript {
+        color: black !important;
+      }
+      .hljs.language-jsx {
         color: black !important;
       }
       .hljs {
